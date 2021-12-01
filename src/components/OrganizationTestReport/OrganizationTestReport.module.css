@@ -1,0 +1,49 @@
+.OrganizationTestReport {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  margin: 5px 35px 10px 0;
+  padding: 10px;
+  border: solid 1px var(--gray);
+  background-color: var(--gray);
+  box-shadow: 1px 1px var(--black-lighter-1);
+}
+
+.OrganizationTestReport:hover {
+  cursor: pointer;
+  border: solid 1px var(--gray-darker-1);
+  background-color: var(--gray-darker-1);
+  box-shadow: 2px 2px var(--black);
+  transition: .2s ease-in-out;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title > b {
+  color: var(--black-lighter-1);
+}
+
+.title > small {
+  color: var(--black-lighter-1);
+}
+
+.tests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  margin-right: 5px;
+}
+
+.tests > .passed {
+  color: #26b126;
+}
+
+.tests > .failed {
+  color: #b12626;
+}
