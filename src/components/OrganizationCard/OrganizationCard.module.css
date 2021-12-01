@@ -1,0 +1,34 @@
+.OrganizationCard {
+  display: grid;
+  grid-template-columns: .5fr 3fr;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px var(--brand);
+  background-color: var(--brand);
+  box-shadow: 2px 3px var(--black-lighter-1);
+}
+
+.OrganizationCard:hover {
+  cursor: pointer;
+  border: solid 1px var(--brand-darker-1);
+  background-color: var(--brand-darker-1);
+  box-shadow: 2px 3px var(--black);
+  transition: .2s ease-in-out;
+}
+
+.OrganizationCard > img {
+  width: 50px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+  border-radius: 50%;
+}
+
+.OrganizationCard > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}

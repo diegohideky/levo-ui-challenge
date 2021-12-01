@@ -1,0 +1,9 @@
+.TestReportList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TestReportList > h4 {
+  color: var(--brand-darker-1);
+}

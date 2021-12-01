@@ -1,0 +1,54 @@
+.GeneralInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 400px;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 1px rgb(231, 231, 245);
+  background-color: rgb(231, 231, 245);
+  gap: 5px
+}
+
+span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.GeneralInfo > .one {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.GeneralInfo > .two {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  color: var(--brand-darker-1);
+}
+
+.GeneralInfo > .three {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.GeneralInfo > .four {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+}
+
+.search {
+  width: 100%;
+  margin: 10px 0;
+}
